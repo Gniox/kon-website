@@ -1,0 +1,67 @@
+.row {
+    display: flex;
+    /* resize: auto; */
+    /* width: 40vw; */
+    height: 50vh;
+    position: center;
+    /* max-width: 100vw; */
+    /* align-content: center; */
+    overflow: visible;
+    border: 5px dashed #f7a239;
+    /* background-size: contain; */
+    
+}
+
+/* .row::after {
+    padding-top: 56.25%; 
+    display: block;
+    content: '';
+} */
+
+.column {
+    display: flex;
+    /* width:20%;   */
+    /* height: auto; */
+    /* height:100px;
+    max-width:20%;
+    flex: 12.5%;
+    position: absolute;
+    object-fit: contain;
+    top: 0; bottom: 0; right: 0; left: 0;
+    padding: 5px; */
+}
+
+/* #Mio {
+    background-color: lightskyblue
+} */
+
+.zoom {
+    /* padding: 50px; */
+    /* background-color: green; */
+    transition: transform .2s; /* Animation */
+    /* width: 200px;
+    height: 200px; */
+    /* margin: 0 auto; */
+}
+  
+.zoom:hover {
+    transform: scale(1.20); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.img {
+    /* max-width: 20vw; */
+    /* height: auto;
+    width: 100%; */
+    /* object-fit: cover; */
+    /* display: block; */
+}
+/* .aspectwrapper {
+    display: inline-block; 
+    width: 100%;           
+    position: relative;   
+} */
+  /* .aspectwrapper::after {
+    padding-top: 56.25%; 
+    display: block;
+    content: '';
+} */
