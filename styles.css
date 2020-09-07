@@ -1,3 +1,18 @@
+/* 
+    TODO: animations that vertically load in lines 
+    of various lengths with different colors on load in
+    to home page... possibly lines going down with a 
+    randomized alpha 
+
+    TODO: Make navbar nicer, possibly fixed on top
+
+    TODO: make store page usable
+
+    TODO: page animation transitions -> diagonal lines of 
+    various lengths
+
+    TODO: change fonts and make the website prettier
+*/
 .row {
     display: flex;
     /* height: auto; */
