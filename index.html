@@ -8,46 +8,60 @@
         <script src="bgChange.js"></script>
     </head>
     <body class="body">
-         <header>
-             <nav>
-                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="/members/mugi.html">MUGI</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                 </ul>
-             </nav>
+        <header>
+            <div class="navbar">
+                <a href="index.html">HOME</a>
+                <div class="dropdown">
+                    <button class="dropbtn">MEMBERS
+                        <i class="fa fa-caret-down">
+                    </button>
+                    <div class="dropdown-content">
+                            <a href="/members/mio.html">MIO</a>
+                            <a href="/members/ritsu.html">RITSU</a>
+                            <a href="/members/mugi.html">MUGI</a>
+                            <a href="/members/azusa.html">AZUSA</a>
+                            <a href="/members/yui.html">YUI</a>
+                    </div>
+                </div>
+                <a href="store.html">STORE</a>
+                <a href="about.html">ABOUT</a>
+            </div>
              <hr>
              <h1 class="title">Ho-Kago Tea Time</h1>
          </header>
          <div class="row">
              <div class="column zoom" id="Mio" 
              onmouseover="bgChange('lightskyblue')"
-             onmouseout="bgChange('transparent')">
+             onmouseout="bgChange('transparent')"
+             onclick="location.href='members/mio.html'">
                     <img src="band pics/Mio.jpg" alt="Mio" style="height: auto;
                     width: 100%;">
              </div>
              <div class="column zoom" id="Ritsu"
              onmouseover="bgChange('lightgreen')"
-             onmouseout="bgChange('transparent')">
+             onmouseout="bgChange('transparent')"
+             onclick="location.href='members/ritsu.html'">
                     <img src="band pics/ritsu.jpg" alt="Ritsu" style="height: auto;
                     width: 100%;">
              </div>
              <div class="column zoom" id="Tsumugi"
              onmouseover="bgChange('khaki')"
-             onmouseout="bgChange('transparent')">
+             onmouseout="bgChange('transparent')"
+             onclick="location.href='members/mugi.html'">
                     <img src="band pics/Tsumugi.jpg" alt="Tsumugi" style="height: auto;
                     width: 100%;">
              </div>
              <div class="column zoom" id="Azusa"
              onmouseover="bgChange('lightpink')"
-             onmouseout="bgChange('transparent')">
+             onmouseout="bgChange('transparent')"
+             onclick="location.href='members/azusa.html'">
                     <img src="band pics/Azusa.jpg" alt="Azusa" style="height: auto;
                     width: 100%;"> 
              </div>
              <div class="column zoom" id="Yui"
              onmouseover="bgChange('plum')"
-             onmouseout="bgChange('transparent')">
+             onmouseout="bgChange('transparent')"
+             onclick="location.href='members/yui.html'">
                     <img src="band pics/Yui.jpg" alt="Yui" style="height: auto;
                     width: 100%;">
              </div>
