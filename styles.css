@@ -1,10 +1,16 @@
 .row {
     display: flex;
-    height: 50vh;
-    position: center;
+    /* height: auto; */
+    width: 80vw;
+    /* justify-content: center; */
+    margin: 0 auto;
     overflow: visible;
     border: 5px dashed #f7a239;
     
+    /* display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 100px);   */
 }
 
 .title {
@@ -13,6 +19,7 @@
 
 .column {
     display: flex;
+    object-fit: cover;
 }
 
 .img {
@@ -22,8 +29,8 @@
 
 .container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    /* align-items: flex-start; */
 
   
     border: 5px dashed rgba(114, 186, 94, 0.35);
@@ -40,6 +47,9 @@
 
 .txtcontainer {
     border: 5px dashed rgba(114, 186, 94, 0.35);
+    align-self: flex-start;
+    margin-right: auto;
+    /* justify-content: space-between; */
 }
 
 .stick {
@@ -47,7 +57,8 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    left: 75vw;
+    /* left: 100vw; */
+    /* margin-left: auto; */
     align-self: flex-end;
     width: 25vw;
     height: 25vh;
