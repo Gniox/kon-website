@@ -18,3 +18,9 @@ function opacityChange(id, opNum) {
 function hlBgChange(id, bg) {
   document.getElementById(id).style.background = bg;
 }
+
+// function toggleAnimation(id) {
+//   var element = document.getElementById(id);
+//   element.className = "shake";
+//   console.log("hello");
+// }

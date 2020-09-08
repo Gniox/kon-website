@@ -24,6 +24,7 @@
   margin: 0 auto;
   overflow: visible;
   border: 5px dashed #f7a239;
+  /* z-index: 10; */
   /* padding: 50px; */
 
   /* display: grid;  
@@ -53,6 +54,7 @@
   display: flex;
   object-fit: cover;
   cursor: pointer;
+  /* z-index: 10; */
   /* animation: fade 10s 4s forwards; */
   /* border: 5px dashed #f7a239; */
 }
@@ -79,7 +81,8 @@
   transform: scale(
     1.2
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  animation: shake 3000ms;
+  /* animation: shake 3000ms infinite; */
+  z-index: 9;
 }
 
 .txtcontainer {
@@ -106,7 +109,8 @@
   border-radius: 20px;
   max-width: 75vw;
   margin: auto;
-  animation: up 3500ms ease 5s;
+  animation: up 4000ms ease 4s;
+  z-index: 10;
   /* height: -100px; */
   /* position: sticky;
     position: -webkit-sticky; */
@@ -159,7 +163,7 @@
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown-content a {
@@ -246,23 +250,24 @@
 }
 
 #Mio {
-  animation: up 2000ms ease 3s;
+  animation: up 2000ms ease 4s;
+  /* z-index: 0; */
 }
 
 #Ritsu {
-  animation: down 1500ms ease 3s;
+  animation: down 1500ms ease 4s;
 }
 
 #Tsumugi {
-  animation: up 2000ms ease 3s;
+  animation: up 2000ms ease 4s;
 }
 
 #Azusa {
-  animation: down 2500ms ease 3s;
+  animation: down 2500ms ease 4s;
 }
 
 #Yui {
-  animation: down 3000ms ease 3s;
+  animation: down 3000ms ease 4s;
 }
 
 .splash {
@@ -272,24 +277,25 @@
   width: 100%;
   height: 100vh;
   background: white;
-  z-index: 10;
+  z-index: 4;
   /* animation: fade 5s 4s forwards; */
   /* background: green; */
 }
 
-.fadeOut {
+/* .fadeOut {
   animation: fade 10s 4s forwards;
-}
+} */
 
-.splash.display.none {
+.splash.display-none {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: white;
-  z-index: -100;
-  opacity: 0;
+  /* z-index: -100; */
+  /* opacity: 0; */
+  z-index: -1;
   /* animation: opacity 10s 4s forwards; */
 }
 /* .column:hover #Mio {
@@ -377,6 +383,10 @@
   animation: right 2000ms ease 2000ms forwards;
 }
 
+/* .shake {
+  animation: shake 1s infinite;
+} */
+
 @keyframes up {
   0% {
     transform: translateY(-200%);
@@ -396,11 +406,17 @@
 }
 
 @keyframes shake {
-  0% {
+  /* 0% {
     transform: rotate(90deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
+  } */
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
