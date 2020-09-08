@@ -6,8 +6,9 @@
 //   }, 4000);
 // });
 
-function bgChange(bg) {
-  document.body.style.background = bg;
+function bgChange(id, bg) {
+  console.log(document.getElementById(id));
+  document.getElementById(id).background = bg;
 }
 
 function opacityChange(id, opNum) {
