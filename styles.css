@@ -409,7 +409,7 @@
   position: relative;
   background: white;
   top: -20vh;
-  animation: left 4500ms 7s infinite alternate;
+  animation: left 4500ms 9s infinite alternate;
   z-index: 1000;
 }
 
@@ -421,7 +421,7 @@
   position: relative;
   background: white;
   top: -40vh;
-  animation: right 4000ms 7s infinite alternate;
+  animation: right 4000ms 9s infinite alternate;
   z-index: 1000;
 }
 
@@ -433,7 +433,7 @@
   position: relative;
   background: white;
   top: -60vh;
-  animation: left 6000ms 7s infinite alternate;
+  animation: left 6000ms 9s infinite alternate;
   z-index: 1000;
 }
 
@@ -445,7 +445,7 @@
   position: relative;
   background: white;
   top: -80vh;
-  animation: right 5500ms 7s infinite alternate;
+  animation: right 5500ms 9s infinite alternate;
   z-index: 1000;
 }
 
@@ -457,7 +457,7 @@
   position: relative;
   background: white;
   top: -100vh;
-  animation: right 7000ms 7s infinite alternate;
+  animation: right 7000ms 9s infinite alternate;
   z-index: 1000;
 }
 
@@ -469,7 +469,7 @@
   position: relative;
   background: white;
   top: -120vh;
-  animation: left 6000ms 7s infinite alternate;
+  animation: left 6000ms 9s infinite alternate;
   z-index: 1000;
 }
 /* .shake {
