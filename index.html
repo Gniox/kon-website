@@ -5,7 +5,7 @@
         <meta name="description" content="This is the description" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <script src="bgChange.js"></script>
+        <script src="scripts.js"></script>
     </head>
     <body class="body">
         <header>
@@ -22,11 +22,11 @@
                         <i class="fa fa-caret-down">
                     </button>
                     <div class="dropdown-content">
-                            <a href="/members/mio.html">MIO</a>
-                            <a href="/members/ritsu.html">RITSU</a>
-                            <a href="/members/mugi.html">MUGI</a>
-                            <a href="/members/azusa.html">AZUSA</a>
-                            <a href="/members/yui.html">YUI</a>
+                            <a id="mio" href="/members/mio.html">MIO</a>
+                            <a id="ritsu" href="/members/ritsu.html">RITSU</a>
+                            <a id="mugi" href="/members/mugi.html">MUGI</a>
+                            <a id="azusa" href="/members/azusa.html">AZUSA</a>
+                            <a id="yui" href="/members/yui.html">YUI</a>
                     </div>
                 </div>
                 <a href="store.html">STORE</a>
@@ -40,44 +40,46 @@
              onmouseover="bgChange('lightskyblue')"
              onmouseout="bgChange('transparent')"
              onclick="location.href='members/mio.html'">
-                    <img src="band pics/Mio.jpg" alt="Mio" style="height: auto;
-                    width: 100%;">
+                    <img class="img" src="band pics/Mio.jpg" alt="Mio" >
              </div>
              <div class="column zoom" id="Ritsu"
              onmouseover="bgChange('lightgreen')"
              onmouseout="bgChange('transparent')"
              onclick="location.href='members/ritsu.html'">
-                    <img src="band pics/ritsu.jpg" alt="Ritsu" style="height: auto;
-                    width: 100%;">
+                    <img class="img" src="band pics/ritsu.jpg" alt="Ritsu">
              </div>
              <div class="column zoom" id="Tsumugi"
              onmouseover="bgChange('khaki')"
              onmouseout="bgChange('transparent')"
              onclick="location.href='members/mugi.html'">
-                    <img src="band pics/Tsumugi.jpg" alt="Tsumugi" style="height: auto;
-                    width: 100%;">
+                    <img class="img" src="band pics/Tsumugi.jpg" alt="Tsumugi">
              </div>
              <div class="column zoom" id="Azusa"
              onmouseover="bgChange('lightpink')"
              onmouseout="bgChange('transparent')"
              onclick="location.href='members/azusa.html'">
-                    <img src="band pics/Azusa.jpg" alt="Azusa" style="height: auto;
-                    width: 100%;"> 
+                    <img class="img" src="band pics/Azusa.jpg" alt="Azusa"> 
              </div>
              <div class="column zoom" id="Yui"
              onmouseover="bgChange('plum')"
              onmouseout="bgChange('transparent')"
              onclick="location.href='members/yui.html'">
-                    <img src="band pics/Yui.jpg" alt="Yui" style="height: auto;
-                    width: 100%;">
+                    <img class="img" src="band pics/Yui.jpg" alt="Yui">
              </div>
         </div>
          
-         <footer>
-             <h3>Ho-kago Tea Time</h3>
-             <ul>
-                    <li><a href="https://www.youtube.com/watch?v=-I85HZlVvx4" target=_top><img src="band pics/YouTube Logo.png"></a></li>
+        <div>
+
+        </div>
+         <footer class="main-footer hidden" id="index footer"
+         onmouseover="opacityChange('index footer', '1')"
+         onmouseout="opacityChange('index footer', '0.0')">
+             <div class="main-footer-container">
+             <h3 class= "title">Ho-kago Tea Time</h3>
+             <ul class=>
+                    <a href="https://www.youtube.com/watch?v=-I85HZlVvx4" target=_top><img class="footer-pic" src="band pics/YouTube Logo.png"></a>
              </ul>
+            </div>
          </footer>
     </body>
 </html>

@@ -5,7 +5,7 @@
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="../styles.css">
     </head>
-    <body>
+    <body class="body">
          <header>
             <div class="navbar">
                     <a href="../index.html">HOME</a>
@@ -14,11 +14,11 @@
                             <i class="fa fa-caret-down">
                         </button>
                         <div class="dropdown-content">
-                                <a href="mio.html" class="active">MIO</a>
-                                <a href="ritsu.html">RITSU</a>
-                                <a href="mugi.html">MUGI</a>
-                                <a href="azusa.html">AZUSA</a>
-                                <a href="yui.html">YUI</a>
+                            <a id="mio" href="/mio.html">MIO</a>
+                        <a id="ritsu" href="ritsu.html">RITSU</a>
+                        <a id="mugi" href="mugi.html">MUGI</a>
+                        <a id="azusa" href="azusa.html">AZUSA</a>
+                        <a id="yui" href="yui.html">YUI</a>
                         </div>
                     </div>
                     <a href="../store.html">STORE</a>
@@ -63,11 +63,15 @@
                     width: auto;">
             </div>
         </div>
-         <footer>
-             <h3>Ho-kago Tea Time</h3>
-             <ul>
-                    <li><a href="https://www.youtube.com/watch?v=-I85HZlVvx4" target=_top><img src="../band pics/YouTube Logo.png"></a></li>
-             </ul>
-         </footer>
+        <footer class="main-footer" id="index footer"
+        onmouseover="opacityChange('index footer', '1')"
+        onmouseout="opacityChange('index footer', '0.0')">
+            <div class="main-footer-container">
+            <h3 class= "title">Ho-kago Tea Time</h3>
+            <ul class=>
+                   <a href="https://www.youtube.com/watch?v=-I85HZlVvx4" target=_top><img class="footer-pic" src="band pics/YouTube Logo.png"></a>
+            </ul>
+           </div>
+        </footer>
     </body>
 </html>
