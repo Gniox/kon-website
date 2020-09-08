@@ -4,6 +4,9 @@
     to home page... possibly lines going down with a 
     randomized alpha 
 
+    TODO: make the kon girls show up from underneath the
+    splash screen
+
     TODO: Make navbar nicer, possibly fixed on top
 
     TODO: make store page usable
@@ -50,6 +53,7 @@
   display: flex;
   object-fit: cover;
   cursor: pointer;
+  /* animation: fade 10s 4s forwards; */
   /* border: 5px dashed #f7a239; */
 }
 
@@ -102,7 +106,7 @@
   border-radius: 20px;
   max-width: 75vw;
   margin: auto;
-  animation: up 3500ms ease;
+  animation: up 3500ms ease 5s;
   /* height: -100px; */
   /* position: sticky;
     position: -webkit-sticky; */
@@ -242,29 +246,136 @@
 }
 
 #Mio {
-  animation: up 1000ms ease;
-  /* animation: shake 3000ms; */
+  animation: up 2000ms ease 3s;
 }
 
 #Ritsu {
-  animation: down 1500ms ease;
+  animation: down 1500ms ease 3s;
 }
 
 #Tsumugi {
-  animation: up 2000ms ease;
+  animation: up 2000ms ease 3s;
 }
 
 #Azusa {
-  animation: down 2500ms ease;
+  animation: down 2500ms ease 3s;
 }
 
 #Yui {
-  animation: down 3000ms ease;
+  animation: down 3000ms ease 3s;
 }
 
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 10;
+  /* animation: fade 5s 4s forwards; */
+  /* background: green; */
+}
+
+.fadeOut {
+  animation: fade 10s 4s forwards;
+}
+
+.splash.display.none {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: -100;
+  opacity: 0;
+  /* animation: opacity 10s 4s forwards; */
+}
 /* .column:hover #Mio {
   animation: shake 3000ms;
-} */
+}  */
+
+.line1 {
+  /* display: flex; */
+  /* width: 400vw; */
+  height: 20vh;
+  background: lightblue;
+
+  /* border-bottom: 50px solid red; */
+  /* transform: rotate(45deg); */
+  /* border-radius: 50px; */
+  left: -100vw;
+  /* transform: translatex(100vw) */
+  /* top: 0; */
+  /* left: -400vw; */
+  position: relative;
+  z-index: -1;
+  /* top: 0 */
+  animation: right 2000ms ease forwards;
+}
+
+.line2 {
+  /* width: 400vw; */
+  height: 20vh;
+  background: lightgreen;
+
+  /* border-bottom: 50px solid red; */
+  /* transform: rotate(45deg); */
+  /* border-radius: 50px; */
+  right: -100vw;
+  /* top: 0vh; */
+  /* bottom: 20px; */
+  position: relative;
+  z-index: -10;
+  animation: left 2000ms ease 500ms forwards;
+}
+
+.line3 {
+  /* width: 400vw; */
+  height: 20vh;
+  background: khaki;
+
+  /* border-bottom: 50px solid red; */
+  /* transform: rotate(45deg); */
+  /* border-radius: 50px; */
+  left: -100vw;
+  /* bottom: 0vh; */
+  /* bottom: 20px; */
+  position: relative;
+  z-index: -1;
+  animation: right 2000ms ease 1000ms forwards;
+}
+.line4 {
+  /* width: 400vw; */
+  height: 20vh;
+  background: lightpink;
+
+  /* border-bottom: 50px solid red; */
+  /* transform: rotate(45deg); */
+  /* border-radius: 50px; */
+  right: -100vw;
+  /* bottom: -60vh; */
+  /* bottom: 20px; */
+  position: relative;
+  z-index: -1;
+  animation: left 2000ms ease 1500ms forwards;
+}
+.line5 {
+  /* width: 400vw; */
+  height: 20vh;
+  background: plum;
+
+  /* border-bottom: 50px solid red; */
+  /* transform: rotate(45deg); */
+  /* border-radius: 50px; */
+  left: -100vw;
+  /* bottom: 0vh; */
+  /* bottom: 20px; */
+  position: relative;
+  z-index: -1;
+  animation: right 2000ms ease 2000ms forwards;
+}
 
 @keyframes up {
   0% {
@@ -290,5 +401,47 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  /* 99% {
+    opacity: 0;
+  } */
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translatex(0vw);
+  }
+  /* 50%      { transform: translatex(20px) translatey(20px); } */
+  /* 50% {
+    transform: translatex(100vw);
+  } */
+  100% {
+    transform: translatex(100vw);
+    /* transform: translatey(100vh); */
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translatex(0vw);
+  }
+  /* 50%      { transform: translatex(20px) translatey(20px); } */
+  /* 50% {
+    transform: translatex(-100vw);
+  } */
+  100% {
+    transform: translatex(-100vw);
+    /* transform: translatey(100vh); */
   }
 }
