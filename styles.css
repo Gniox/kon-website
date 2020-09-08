@@ -75,6 +75,7 @@
   transform: scale(
     1.2
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  animation: shake 3000ms;
 }
 
 .txtcontainer {
@@ -101,6 +102,7 @@
   border-radius: 20px;
   max-width: 75vw;
   margin: auto;
+  animation: up 3500ms ease;
   /* height: -100px; */
   /* position: sticky;
     position: -webkit-sticky; */
@@ -214,6 +216,16 @@
   /* bottom: 0; */
   width: 100%;
 }
+.index-footer {
+  background-color: pink;
+  color: white;
+  /* max-height: 75px; */
+  /* padding: 0.25em 0; */
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  bottom: 0;
+}
 
 .main-footer-container {
   display: flex;
@@ -227,4 +239,56 @@
 
 .hidden {
   opacity: 0;
+}
+
+#Mio {
+  animation: up 1000ms ease;
+  /* animation: shake 3000ms; */
+}
+
+#Ritsu {
+  animation: down 1500ms ease;
+}
+
+#Tsumugi {
+  animation: up 2000ms ease;
+}
+
+#Azusa {
+  animation: down 2500ms ease;
+}
+
+#Yui {
+  animation: down 3000ms ease;
+}
+
+/* .column:hover #Mio {
+  animation: shake 3000ms;
+} */
+
+@keyframes up {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
