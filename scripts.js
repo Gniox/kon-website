@@ -26,7 +26,7 @@ function transition(id, page) {
 
   setTimeout(() => {
     location.href = page;
-  }, 1950);
+  }, 1000);
 }
 
 // function toggleAnimation(id) {

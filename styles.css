@@ -1,11 +1,4 @@
 /* 
-    TODO: animations that vertically load in lines 
-    of various lengths with different colors on load in
-    to home page... possibly lines going down with a 
-    randomized alpha 
-
-    TODO: get rid of space under footers
-
     TODO: Make navbar nicer
 
     TODO: make store page usable
@@ -16,18 +9,21 @@
 
 */
 :root {
-  --animation-duration: 1000ms;
+  --animation-duration: 250ms;
 }
 
 .row {
   display: flex;
-  /* height: auto; */
+  height: auto;
   width: 60vw;
   /* justify-content: center; */
   margin: 0 auto;
   overflow: visible;
+  justify-content: center;
+  align-content: center;
   background: transparent;
-  animation: borderWipe 2000ms ease 4s forwards;
+  /* position: fixed; */
+  animation: borderWipe 2000ms ease 1.5s forwards;
   /* border: 5px dashed #f7a239; */
   /* z-index: 10; */
   /* padding: 50px; */
@@ -44,7 +40,18 @@
 }
 
 #index-title {
-  animation: fadeIn 2000ms ease 3s;
+  animation: fadeIn 2000ms ease 0.99s;
+}
+
+.h2-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 5px dashed rgba(114, 186, 94, 1); */
+  display: flex;
+  /* width: 100%; */
+  padding: 25px;
+  margin: 0;
 }
 
 .body {
@@ -59,7 +66,7 @@
 }
 
 .page-transition {
-  animation: fadeUp 2000ms 2.5s;
+  animation: fadeUp 1s 1s;
 }
 
 .body header {
@@ -96,6 +103,42 @@
   background-color: rgba(255, 255, 255, 0.25);
   border: 5px solid rgba(218, 178, 49, 1);
   z-index: 4;
+}
+
+.section-container {
+  margin: 0 auto;
+  max-width: 75vw;
+  border: 5px solid rgba(218, 178, 49, 1);
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-image {
+  height: 250px;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
 }
 .zoom {
   transition: transform 0.2s; /* Animation */
@@ -146,7 +189,7 @@
 }
 
 .index-navbar {
-  animation: up var(--animation-duration) ease 3s;
+  animation: up 2s ease 0.99s;
 }
 
 .navbar a {
@@ -256,6 +299,7 @@
   width: 100%;
   bottom: 0;
   left: 0;
+  overflow-y: hidden;
   /* border: 5px dashed #f7a239; */
 }
 .index-footer {
@@ -290,24 +334,24 @@
 }
 
 #Mio {
-  animation: up var(--animation-duration) ease 3s;
+  animation: up 1s ease 0.99s;
   /* z-index: 0; */
 }
 
 #Ritsu {
-  animation: down var(--animation-duration) ease 3s;
+  animation: down 1s ease 0.99s;
 }
 
 #Tsumugi {
-  animation: up var(--animation-duration) ease 3s;
+  animation: up 1s ease 0.99s;
 }
 
 #Azusa {
-  animation: down var(--animation-duration) ease 3s;
+  animation: down 1s ease 0.99s;
 }
 
 #Yui {
-  animation: down var(--animation-duration) ease 3s;
+  animation: down 1s ease 0.99s;
 }
 
 .splash {
@@ -374,7 +418,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -10;
-  animation: left var(--animation-duration) ease 500ms forwards;
+  animation: left var(--animation-duration) ease 250ms forwards;
 }
 
 .line3 {
@@ -390,7 +434,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -1;
-  animation: right var(--animation-duration) ease 1000ms forwards;
+  animation: right var(--animation-duration) ease 500ms forwards;
 }
 .line4 {
   /* width: 400vw; */
@@ -405,7 +449,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -1;
-  animation: left var(--animation-duration) ease 1500ms forwards;
+  animation: left var(--animation-duration) ease 750ms forwards;
 }
 .line5 {
   /* width: 400vw; */
@@ -420,7 +464,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -1;
-  animation: right var(--animation-duration) ease 2000ms forwards;
+  animation: right var(--animation-duration) ease 1000ms forwards;
 }
 
 .line6 {
@@ -431,7 +475,7 @@
   position: relative;
   background: white;
   top: -20vh;
-  animation: left 4500ms 6s infinite alternate;
+  animation: left 4500ms 3s infinite alternate;
   z-index: 0;
 }
 
@@ -443,7 +487,7 @@
   position: relative;
   background: white;
   top: -40vh;
-  animation: right 4000ms 6s infinite alternate;
+  animation: right 4000ms 3s infinite alternate;
   z-index: 0;
 }
 
@@ -455,7 +499,7 @@
   position: relative;
   background: white;
   top: -60vh;
-  animation: left 6000ms 6s infinite alternate;
+  animation: left 6000ms 3s infinite alternate;
   z-index: 0;
 }
 
@@ -467,7 +511,7 @@
   position: relative;
   background: white;
   top: -80vh;
-  animation: right 5500ms 6s infinite alternate;
+  animation: right 5500ms 3s infinite alternate;
   z-index: 0;
 }
 
@@ -479,7 +523,7 @@
   position: relative;
   background: white;
   top: -100vh;
-  animation: right 7000ms 6s infinite alternate;
+  animation: right 7000ms 3s infinite alternate;
   z-index: 0;
 }
 
@@ -491,7 +535,7 @@
   position: relative;
   background: white;
   top: -120vh;
-  animation: left 6000ms 6s infinite alternate;
+  animation: left 6000ms 3s infinite alternate;
   z-index: 0;
 }
 
@@ -503,7 +547,7 @@
   position: relative;
   background: white;
   top: -20vh;
-  animation: left 4500ms 4.5s infinite alternate;
+  animation: left 4500ms 2s infinite alternate;
   z-index: 0;
 }
 
@@ -515,7 +559,7 @@
   position: relative;
   background: white;
   top: -40vh;
-  animation: right 4000ms 4s infinite alternate;
+  animation: right 4000ms 2s infinite alternate;
   z-index: 0;
 }
 
@@ -527,7 +571,7 @@
   position: relative;
   background: white;
   top: -60vh;
-  animation: left 6000ms 4.5s infinite alternate;
+  animation: left 6000ms 2s infinite alternate;
   z-index: 0;
 }
 
@@ -539,7 +583,7 @@
   position: relative;
   background: white;
   top: -80vh;
-  animation: right 5500ms 4.5s infinite alternate;
+  animation: right 5500ms 2s infinite alternate;
   z-index: 0;
 }
 
@@ -551,7 +595,7 @@
   position: relative;
   background: white;
   top: -100vh;
-  animation: right 7000ms 4.5s infinite alternate;
+  animation: right 7000ms 2s infinite alternate;
   z-index: 0;
 }
 
@@ -563,7 +607,7 @@
   position: relative;
   background: white;
   top: -120vh;
-  animation: left 6000ms 4.5s infinite alternate;
+  animation: left 6000ms 2s infinite alternate;
   z-index: 0;
 }
 
