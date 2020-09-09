@@ -5,31 +5,48 @@
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="body">
-         <header>
-             <div class="navbar">
-                <a href="index.html">HOME</a>
-                <div class="dropdown">
-                    <button class="dropbtn">MEMBERS
-                        <i class="fa fa-caret-down">
-                    </button>
-                    <div class="dropdown-content">
-                        <a id="mio" href="/members/mio.html">MIO</a>
-                        <a id="ritsu" href="/members/ritsu.html">RITSU</a>
-                        <a id="mugi" href="/members/mugi.html">MUGI</a>
-                        <a id="azusa" href="/members/azusa.html">AZUSA</a>
-                        <a id="yui" href="/members/yui.html">YUI</a>
-                    </div>
-                </div>
-                <a href="store.html">STORE</a>
-                <a href="about.html" class="active">ABOUT</a>
+    <body class="body" id = "abody">
+        <div class="splash">
+            <script src="../app.js"></script>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="line5"></div>
+            <div>
+                <div class="line6f"></div>
+                <div class="line7f"></div>
+                <div class="line8f"></div>
+                <div class="line9f"></div>
+                <div class="line10f"></div>
+                <div class="line11f"></div>
             </div>
+        </div>
+        <div class="page-transition">
+         <header>
+            <div class="navbar index-navbar">
+            <a onclick="transition('abody', 'index.html')">HOME</a>
+            <div class="dropdown">
+                <button class="dropbtn">MEMBERS
+                    <i class="fa fa-caret-down">
+                </button>
+                <div class="dropdown-content">
+                        <a id="mio"  onclick="transition('abody', 'members/mio.html')">MIO</a>
+                        <a id="ritsu" onclick="transition('abody', 'members/ritsu.html')">RITSU</a>
+                        <a id="mugi"  onclick="transition('abody', 'members/mugi.html')">MUGI</a>
+                        <a id="azusa" onclick="transition('abody', 'members/azusa.html')">AZUSA</a>
+                        <a id="yui" onclick="transition('abody', 'members/yui.html')">YUI</a>
+                </div>
+            </div>
+            <a onclick="transition('abody', 'store.html')">STORE</a>
+            <a onclick="transition('abody', 'about.html')" class="active">ABOUT</a>
+        </div>
              <hr>
              <h1 class="title">Ho-Kago Tea Time</h1>
          </header>
          <div class="container">
                 <div class="txtcontainer">
-                    <h2>MUGI</h2>
+                    <h2>ABOUT</h2>
                     <p>
                             Ho-kago Tea Time (放課後ほうかごティータイムてぃいたいむ), often abbreviated as HTT, is the main band of the series K-ON!. The name translates into English as After-School Tea Time.
                     </p>
@@ -64,6 +81,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <footer class="main-footer" id="index footer"
         onmouseover="opacityChange('index footer', '1')"
         onmouseout="opacityChange('index footer', '0.0')">

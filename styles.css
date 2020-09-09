@@ -19,6 +19,10 @@
 
     TODO: background for pages
 */
+:root {
+  --animation-duration: 1000ms;
+}
+
 .row {
   display: flex;
   /* height: auto; */
@@ -27,7 +31,7 @@
   margin: 0 auto;
   overflow: visible;
   background: transparent;
-  animation: borderWipe 2000ms ease 7s forwards;
+  animation: borderWipe 2000ms ease 4s forwards;
   /* border: 5px dashed #f7a239; */
   /* z-index: 10; */
   /* padding: 50px; */
@@ -44,7 +48,7 @@
 }
 
 #index-title {
-  animation: fadeIn 10s ease 4s;
+  animation: fadeIn 2000ms ease 3s;
 }
 
 .body {
@@ -56,6 +60,10 @@
   /* border: 5px dashed #f7a239; */
   /* position: relative; */
   /* padding: 0 0 150px; */
+}
+
+.page-transition {
+  animation: fadeUp 2000ms 3s;
 }
 
 .body header {
@@ -87,9 +95,11 @@
   max-width: 75vw;
   margin: auto;
   align-content: center;
-  border: 5px dashed rgba(114, 186, 94, 0.35);
+  /* border: 5px dashed rgba(114, 186, 94, 0.35); */
   /* height: 100vh; */
-  background-color: rgba(114, 186, 94, 0.05);
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 5px solid rgba(218, 178, 49, 1);
+  z-index: 4;
 }
 .zoom {
   transition: transform 0.2s; /* Animation */
@@ -104,9 +114,12 @@
 }
 
 .txtcontainer {
-  border: 5px dashed rgba(114, 186, 94, 0.35);
+  /* border: 5px solid rgba(114, 186, 94, 0.35); */
   align-self: flex-start;
   margin-right: auto;
+  background: white;
+  align-content: center;
+  /* opacity: 0.5; */
   /* justify-content: space-between; */
 }
 
@@ -118,7 +131,7 @@
   align-self: flex-end;
   width: 25vw;
   height: 25vh;
-  border: 5px dashed rgba(114, 186, 94, 0.35);
+  /* border: 5px dashed rgba(114, 186, 94, 0.35); */
 }
 
 .navbar {
@@ -127,7 +140,7 @@
   border-radius: 20px;
   max-width: 75vw;
   margin: auto;
-  z-index: 10;
+  z-index: 100;
   /* height: -100px; */
   /* position: sticky;
     position: -webkit-sticky; */
@@ -137,7 +150,7 @@
 }
 
 .index-navbar {
-  animation: up 4000ms ease 4s;
+  animation: up var(--animation-duration) ease 3s;
 }
 
 .navbar a {
@@ -280,24 +293,24 @@
 }
 
 #Mio {
-  animation: up 2000ms ease 4s;
+  animation: up var(--animation-duration) ease 3s;
   /* z-index: 0; */
 }
 
 #Ritsu {
-  animation: down 1500ms ease 4s;
+  animation: down var(--animation-duration) ease 3s;
 }
 
 #Tsumugi {
-  animation: up 2000ms ease 4s;
+  animation: up var(--animation-duration) ease 3s;
 }
 
 #Azusa {
-  animation: down 2500ms ease 4s;
+  animation: down var(--animation-duration) ease 3s;
 }
 
 #Yui {
-  animation: down 3000ms ease 4s;
+  animation: down var(--animation-duration) ease 3s;
 }
 
 .splash {
@@ -307,7 +320,7 @@
   width: 100%;
   height: 100vh;
   background: white;
-  z-index: 4;
+  z-index: 1;
   /* animation: fade 5s 4s forwards; */
   /* background: green; */
 }
@@ -348,7 +361,7 @@
   position: relative;
   z-index: -1;
   /* top: 0 */
-  animation: right 2000ms ease forwards;
+  animation: right var(--animation-duration) ease forwards;
 }
 
 .line2 {
@@ -364,7 +377,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -10;
-  animation: left 2000ms ease 500ms forwards;
+  animation: left var(--animation-duration) ease 500ms forwards;
 }
 
 .line3 {
@@ -380,7 +393,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -1;
-  animation: right 2000ms ease 1000ms forwards;
+  animation: right var(--animation-duration) ease 1000ms forwards;
 }
 .line4 {
   /* width: 400vw; */
@@ -395,7 +408,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -1;
-  animation: left 2000ms ease 1500ms forwards;
+  animation: left var(--animation-duration) ease 1500ms forwards;
 }
 .line5 {
   /* width: 400vw; */
@@ -410,7 +423,7 @@
   /* bottom: 20px; */
   position: relative;
   z-index: -1;
-  animation: right 2000ms ease 2000ms forwards;
+  animation: right var(--animation-duration) ease 2000ms forwards;
 }
 
 .line6 {
@@ -421,8 +434,8 @@
   position: relative;
   background: white;
   top: -20vh;
-  animation: left 4500ms 9.5s infinite alternate;
-  z-index: 1000;
+  animation: left 4500ms 6s infinite alternate;
+  z-index: 0;
 }
 
 .line7 {
@@ -433,8 +446,8 @@
   position: relative;
   background: white;
   top: -40vh;
-  animation: right 4000ms 9.5s infinite alternate;
-  z-index: 1000;
+  animation: right 4000ms 6s infinite alternate;
+  z-index: 0;
 }
 
 .line8 {
@@ -445,8 +458,8 @@
   position: relative;
   background: white;
   top: -60vh;
-  animation: left 6000ms 9.5s infinite alternate;
-  z-index: 1000;
+  animation: left 6000ms 6s infinite alternate;
+  z-index: 0;
 }
 
 .line9 {
@@ -457,8 +470,8 @@
   position: relative;
   background: white;
   top: -80vh;
-  animation: right 5500ms 9.5s infinite alternate;
-  z-index: 1000;
+  animation: right 5500ms 6s infinite alternate;
+  z-index: 0;
 }
 
 .line10 {
@@ -469,8 +482,8 @@
   position: relative;
   background: white;
   top: -100vh;
-  animation: right 7000ms 9.5ss infinite alternate;
-  z-index: 1000;
+  animation: right 7000ms 6s infinite alternate;
+  z-index: 0;
 }
 
 .line11 {
@@ -481,12 +494,85 @@
   position: relative;
   background: white;
   top: -120vh;
-  animation: left 6000ms 9.5s infinite alternate;
-  z-index: 1000;
+  animation: left 6000ms 6s infinite alternate;
+  z-index: 0;
 }
-/* .shake {
-  animation: shake 1s infinite;
-} */
+
+.line6f {
+  height: 5vh;
+  opacity: 0.25;
+  right: -100vw;
+  border-radius: 50px;
+  position: relative;
+  background: white;
+  top: -20vh;
+  animation: left 4500ms 4.5s infinite alternate;
+  z-index: 0;
+}
+
+.line7f {
+  height: 5vh;
+  opacity: 0.5;
+  left: -100vw;
+  border-radius: 50px;
+  position: relative;
+  background: white;
+  top: -40vh;
+  animation: right 4000ms 4s infinite alternate;
+  z-index: 0;
+}
+
+.line8f {
+  height: 5vh;
+  opacity: 0.25;
+  right: -100vw;
+  border-radius: 50px;
+  position: relative;
+  background: white;
+  top: -60vh;
+  animation: left 6000ms 4.5s infinite alternate;
+  z-index: 0;
+}
+
+.line9f {
+  height: 5vh;
+  opacity: 0.75;
+  left: -100vw;
+  border-radius: 50px;
+  position: relative;
+  background: white;
+  top: -80vh;
+  animation: right 5500ms 4.5s infinite alternate;
+  z-index: 0;
+}
+
+.line10f {
+  height: 5vh;
+  opacity: 0.25;
+  left: -100vw;
+  border-radius: 50px;
+  position: relative;
+  background: white;
+  top: -100vh;
+  animation: right 7000ms 4.5s infinite alternate;
+  z-index: 0;
+}
+
+.line11f {
+  height: 5vh;
+  opacity: 0.25;
+  right: -100vw;
+  border-radius: 50px;
+  position: relative;
+  background: white;
+  top: -120vh;
+  animation: left 6000ms 4.5s infinite alternate;
+  z-index: 0;
+}
+
+.transition {
+  animation: fadeDown 2000ms;
+}
 
 @keyframes up {
   0% {
@@ -533,17 +619,29 @@
   }
 }
 
-@keyframes fade {
+@keyframes fadeDown {
   0% {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(0%);
   }
   /* 99% {
     opacity: 0;
   } */
   100% {
     opacity: 0;
-    transform: translateY(0px);
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(100%);
+  }
+  /* 99% {
+        opacity: 0;
+      } */
+  100% {
+    transform: translateY(0%);
   }
 }
 

@@ -7,22 +7,22 @@
     </head>
     <body class="body">
          <header>
-            <div class="navbar">
-                <a href="index.html">HOME</a>
+            <div class="navbar index-navbar">
+                <a onclick="transition('body-index', 'index.html')">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">MEMBERS
                         <i class="fa fa-caret-down">
                     </button>
                     <div class="dropdown-content">
-                        <a id="mio" href="/members/mio.html">MIO</a>
-                        <a id="ritsu" href="/members/ritsu.html">RITSU</a>
-                        <a id="mugi" href="/members/mugi.html">MUGI</a>
-                        <a id="azusa" href="/members/azusa.html">AZUSA</a>
-                        <a id="yui" href="/members/yui.html">YUI</a>
+                            <a id="mio"  onclick="transition('body-index', 'members/mio.html')">MIO</a>
+                            <a id="ritsu" onclick="transition('body-index', 'members/ritsu.html')">RITSU</a>
+                            <a id="mugi"  onclick="transition('body-index', 'members/mugi.html')">MUGI</a>
+                            <a id="azusa" onclick="transition('body-index', 'members/azusa.html')">AZUSA</a>
+                            <a id="yui" onclick="transition('body-index', 'members/yui.html')">YUI</a>
                     </div>
                 </div>
-                <a href="store.html">STORE</a>
-                <a href="about.html">ABOUT</a>
+                <a onclick="transition('body-index', 'store.html')" class="active">STORE</a>
+                <a onclick="transition('body-index', 'about.html')">ABOUT</a>
             </div>
              <hr>
              <h1 class="title">Ho-Kago Tea Time</h1>

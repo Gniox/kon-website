@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css">
         <script src="scripts.js"></script>
     </head>
-    <body class="body index">
+    <body class="body index" id="body-index">
         <div class="splash">
             <script src="app.js"></script>
             <div class="line1"></div>
@@ -31,54 +31,44 @@
                 <!-- <div style="background-color: blue">
                     <img class = "logo" src="band pics/pngwave.png" alt="logo">
                 </div> -->
-                <a href="index.html" class="active">HOME</a>
+                <a onclick="transition('body-index', 'index.html')" class="active">HOME</a>
                 <div class="dropdown">
                     <button class="dropbtn">MEMBERS
                         <i class="fa fa-caret-down">
                     </button>
                     <div class="dropdown-content">
-                            <a id="mio" href="/members/mio.html">MIO</a>
-                            <a id="ritsu" href="/members/ritsu.html">RITSU</a>
-                            <a id="mugi" href="/members/mugi.html">MUGI</a>
-                            <a id="azusa" href="/members/azusa.html">AZUSA</a>
-                            <a id="yui" href="/members/yui.html">YUI</a>
+                            <a id="mio"  onclick="transition('body-index', 'members/mio.html')">MIO</a>
+                            <a id="ritsu" onclick="transition('body-index', 'members/ritsu.html')">RITSU</a>
+                            <a id="mugi"  onclick="transition('body-index', 'members/mugi.html')">MUGI</a>
+                            <a id="azusa" onclick="transition('body-index', 'members/azusa.html')">AZUSA</a>
+                            <a id="yui" onclick="transition('body-index', 'members/yui.html')">YUI</a>
                     </div>
                 </div>
-                <a href="store.html">STORE</a>
-                <a href="about.html">ABOUT</a>
+                <a onclick="transition('body-index', 'store.html')">STORE</a>
+                <a onclick="transition('body-index', 'about.html')">ABOUT</a>
             </div>
              <hr>
              <h1 class="title" id="index-title">Ho-Kago Tea Time</h1>
          </header>
          <div class="row" id="index-row">
              <div class="column zoom" id="Mio" 
-             onmouseover="bgChange('line-group', 'lightskyblue')"
-             onmouseout="bgChange('line-group', 'white')"
-             onclick="location.href='members/mio.html'">
+             onclick="transition('body-index', 'members/mio.html')">
                     <img class="img" src="band pics/Mio.jpg" alt="Mio" >
              </div>
              <div class="column zoom" id="Ritsu"
-             onmouseover="bgChange('lightgreen')"
-             onmouseout="bgChange('transparent')"
-             onclick="location.href='members/ritsu.html'">
+             onclick="transition('body-index', 'members/ritsu.html')">
                     <img class="img" src="band pics/ritsu.jpg" alt="Ritsu">
              </div>
              <div class="column zoom" id="Tsumugi"
-             onmouseover="bgChange('khaki')"
-             onmouseout="bgChange('transparent')"
-             onclick="location.href='members/mugi.html'">
+             onclick="transition('body-index', 'members/mugi.html')">
                     <img class="img" src="band pics/Tsumugi.jpg" alt="Tsumugi">
              </div>
              <div class="column zoom" id="Azusa"
-             onmouseover="bgChange('lightpink')"
-             onmouseout="bgChange('transparent')"
-             onclick="location.href='members/azusa.html'">
+             onclick="transition('body-index', 'members/azusa.html')">
                     <img class="img" src="band pics/Azusa.jpg" alt="Azusa"> 
              </div>
              <div class="column zoom" id="Yui"
-             onmouseover="bgChange('plum')"
-             onmouseout="bgChange('transparent')"
-             onclick="location.href='members/yui.html'">
+             onclick="transition('body-index', 'members/yui.html')">
                     <img class="img" src="band pics/Yui.jpg" alt="Yui">
              </div>
         </div>
