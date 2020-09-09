@@ -4,10 +4,9 @@
     to home page... possibly lines going down with a 
     randomized alpha 
 
-    TODO: make the kon girls show up from underneath the
-    splash screen
+    TODO: get rid of space under footers
 
-    TODO: Make navbar nicer, possibly fixed on top
+    TODO: Make navbar nicer
 
     TODO: make store page usable
 
@@ -15,6 +14,10 @@
     various lengths
 
     TODO: change fonts and make the website prettier
+
+    TODO: add button on righthand side to bring user back to top
+
+    TODO: background for pages
 */
 .row {
   display: flex;
@@ -41,7 +44,7 @@
 }
 
 #index-title {
-  animation: fadeIn 9000ms ease 4s;
+  animation: fadeIn 10s ease 4s;
 }
 
 .body {
@@ -81,7 +84,9 @@
   display: flex;
   justify-content: space-between;
   /* align-items: flex-start; */
-
+  max-width: 75vw;
+  margin: auto;
+  align-content: center;
   border: 5px dashed rgba(114, 186, 94, 0.35);
   /* height: 100vh; */
   background-color: rgba(114, 186, 94, 0.05);
@@ -416,7 +421,7 @@
   position: relative;
   background: white;
   top: -20vh;
-  animation: left 4500ms 9s infinite alternate;
+  animation: left 4500ms 9.5s infinite alternate;
   z-index: 1000;
 }
 
@@ -428,7 +433,7 @@
   position: relative;
   background: white;
   top: -40vh;
-  animation: right 4000ms 9s infinite alternate;
+  animation: right 4000ms 9.5s infinite alternate;
   z-index: 1000;
 }
 
@@ -440,7 +445,7 @@
   position: relative;
   background: white;
   top: -60vh;
-  animation: left 6000ms 9s infinite alternate;
+  animation: left 6000ms 9.5s infinite alternate;
   z-index: 1000;
 }
 
@@ -452,7 +457,7 @@
   position: relative;
   background: white;
   top: -80vh;
-  animation: right 5500ms 9s infinite alternate;
+  animation: right 5500ms 9.5s infinite alternate;
   z-index: 1000;
 }
 
@@ -464,7 +469,7 @@
   position: relative;
   background: white;
   top: -100vh;
-  animation: right 7000ms 9s infinite alternate;
+  animation: right 7000ms 9.5ss infinite alternate;
   z-index: 1000;
 }
 
@@ -476,7 +481,7 @@
   position: relative;
   background: white;
   top: -120vh;
-  animation: left 6000ms 9s infinite alternate;
+  animation: left 6000ms 9.5s infinite alternate;
   z-index: 1000;
 }
 /* .shake {
@@ -494,6 +499,9 @@
 
 @keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
