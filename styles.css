@@ -48,7 +48,7 @@
   max-width: 100%;
   /* max-height: 100%; */
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   margin: 0;
   /* border: 5px dashed #f7a239; */
   /* position: relative; */
@@ -57,6 +57,10 @@
 
 .body header {
   padding: 20px;
+}
+
+.index {
+  overflow-y: hidden;
 }
 
 .column {
@@ -118,7 +122,6 @@
   border-radius: 20px;
   max-width: 75vw;
   margin: auto;
-  animation: up 4000ms ease 4s;
   z-index: 10;
   /* height: -100px; */
   /* position: sticky;
@@ -126,6 +129,10 @@
   /* position: fixed; */
   /* top: 0; */
   /* display: flex; */
+}
+
+.index-navbar {
+  animation: up 4000ms ease 4s;
 }
 
 .navbar a {
@@ -229,7 +236,7 @@
   color: white;
   /* max-height: 75px; */
   /* padding: 0.25em 0; */
-  position: absolute;
+  position: relative;
   /* bottom: 0; */
   width: 100%;
   bottom: 0;
