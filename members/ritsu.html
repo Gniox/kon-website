@@ -4,8 +4,9 @@
         <title>Ho-Kago Tea Time | About</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="../styles.css">
+        <script src="../scripts.js"></script>
     </head>
-    <body class="body">
+    <body class="body" id = "abody">
         <div class="splash">
             <script src="../app.js"></script>
             <div class="line1"></div>
@@ -23,23 +24,23 @@
             </div>
         </div>
         <div class="page-transition">
-        <header>
-        <div class="navbar">
-                <a href="../index.html">HOME</a>
-                <div class="dropdown">
-                    <button class="dropbtn">MEMBERS
-                        <i class="fa fa-caret-down">
-                    </button>
-                    <div class="dropdown-content">
-                        <a id="mio" href="mio.html">MIO</a>
-                        <a id="ritsu" href="ritsu.html">RITSU</a>
-                        <a id="mugi" href="mugi.html">MUGI</a>
-                        <a id="azusa" href="azusa.html">AZUSA</a>
-                        <a id="yui" href="yui.html">YUI</a>
-                    </div>
+         <header>
+            <div class="navbar">
+            <a onclick="transition('abody', '../index.html')">HOME</a>
+            <div class="dropdown active">
+                <button class="dropbtn ">MEMBERS
+                    <i class="fa fa-caret-down">
+                </button>
+                <div class="dropdown-content"> 
+                        <a id="mio"  onclick="transition('abody', 'mio.html')">MIO</a>
+                        <a id="ritsu" onclick="transition('abody', 'ritsu.html')" class="active">RITSU</a>
+                        <a id="mugi"  onclick="transition('abody', 'mugi.html')">MUGI</a>
+                        <a id="azusa" onclick="transition('abody', 'azusa.html')">AZUSA</a>
+                        <a id="yui" onclick="transition('abody', 'yui.html')">YUI</a>
                 </div>
-                <a href="../store.html">STORE</a>
-                <a href="../about.html">ABOUT</a>
+            </div>
+            <a onclick="transition('abody', '../store.html')">STORE</a>
+            <a onclick="transition('abody', '../about.html')">ABOUT</a>
             </div>
              <hr>
              <h1 class="title">Ho-Kago Tea Time</h1>

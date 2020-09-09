@@ -10,14 +10,10 @@
 
     TODO: make store page usable
 
-    TODO: page animation transitions -> diagonal lines of 
-    various lengths
-
     TODO: change fonts and make the website prettier
 
     TODO: add button on righthand side to bring user back to top
 
-    TODO: background for pages
 */
 :root {
   --animation-duration: 1000ms;
@@ -63,7 +59,7 @@
 }
 
 .page-transition {
-  animation: fadeUp 2000ms 3s;
+  animation: fadeUp 2000ms 2.5s;
 }
 
 .body header {
@@ -160,6 +156,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .dropdown {
