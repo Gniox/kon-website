@@ -36,13 +36,29 @@
 
 .title {
   text-align: center;
+  color: white;
+  /* background: white; */
+  /* border: 5px solid rgba(218, 178, 49, 1); */
   /* padding: 20px; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* margin: 0 auto; */
+  /* position: relative; */
 }
 
 #index-title {
   animation: fadeIn 2000ms ease 0.99s;
 }
 
+.otherside {
+  /* align-content: flex-end; */
+  /* border: 5px solid rgba(218, 178, 49, 1); */
+  /* position: relative; */
+  /* left: 60%; */
+  /* flex-grow: 1; */
+  /* align-self: flex-end; */
+  right: 1000px;
+}
 .h2-title {
   display: flex;
   align-items: center;
@@ -50,8 +66,7 @@
   /* border: 5px dashed rgba(114, 186, 94, 1); */
   display: flex;
   /* width: 100%; */
-  padding: 25px;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .body {
@@ -175,8 +190,9 @@
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: transparent;
   border-radius: 20px;
+  border: 5px solid plum;
   max-width: 75vw;
   margin: auto;
   z-index: 100;
@@ -274,7 +290,7 @@
 }
 
 .active {
-  background-color: pink;
+  background-color: plum;
 }
 
 .logo {
