@@ -37,7 +37,12 @@
 .shop-row {
   display: flex;
   justify-content: space-evenly;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+}
+
+.shop-row-item {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .title {
@@ -144,7 +149,11 @@
 }
 
 .shop-item-image {
-  height: 250px;
+  height: auto;
+  width: 250px;
+  max-height: 250px;
+  max-width: 100%;
+  
 }
 
 .shop-item-details {
@@ -358,6 +367,10 @@
   text-align: end;
   /* border: 5px dashed blue; */
 }
+
+/* .button {
+  
+} */
 
 .hidden {
   opacity: 0;

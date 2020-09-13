@@ -4,7 +4,7 @@
         <title>Ho-Kago Tea Time | About</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js" async></script>
+        <script src="scripts.js"></script>
     </head>
     <body class="body" id = "abody">
         <div class="splash">
@@ -57,7 +57,7 @@
                 </div>
                 <div class="shop-item-details">
                     <span class="shop-item-price">10 headpats</span>
-                    <button role="button">ADD TO CART</button>
+                    <button role="button" onclick="addToCart('item-1')">ADD TO CART</button>
                 </div>
              </div>
              <div class="shop-item" id = "item-2">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="shop-item-details">
                     <span class="shop-item-price">10 headpats</span>
-                    <button role="button" onclick="addToCart('item-2')">ADD TO CART</button>
+                    <button class="button" role="button" onclick="addToCart('item-2')">ADD TO CART</button>
                 </div>
             </div>
          </section>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="shop-item-details">
                     <span class="shop-item-price">1000 headpats</span>
-                    <button role="button">ADD TO CART</button>
+                    <button role="button" onclick="addToCart('item-3')">ADD TO CART</button>
                 </div>
          </section class=>
          <section class="section-container" id="shop-container">
@@ -118,7 +118,7 @@
         <div>
             <strong>Total</strong>
             <span id = "total">0 headpats</span>
-            <button role="button">PURCHASE</button>
+            <button role="button" onclick ="purchase()">PURCHASE</button>
         </div>
     </section>
          </section>
