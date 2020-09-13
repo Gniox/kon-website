@@ -1,16 +1,3 @@
-// const splash = document.querySelector(".splash");
-
-// document.addEventListener("DOMContentLoaded", (e) => {
-//   setTimeout(() => {
-//     splash.classList.add("display-none");
-//   }, 4000);
-// });
-
-// function bgChange(id, bg) {
-//   console.log(document.getElementById(id));
-//   document.getElementById(id).background = bg;
-// }
-
 let total = 0;
 let num = 1;
 
@@ -62,7 +49,7 @@ function quantityChange(item, quantity, uniqueId, r_value) {
           .getElementsByClassName("shop-item-price")[0]
           .textContent.match(/(\d+)/)
       ) * difference;
-    if (quantity.value == 0) removeItem(uniqueId, quantity);
+    // if (quantity.value == 0) removeItem(uniqueId, quantity);
     changeTotal();
     quantity.setAttribute("value", quantity.value);
   }
@@ -103,7 +90,7 @@ function addToCart(id) {
       "shop-item-title"
     )[0].textContent;
 
-    name.classList.add("shop-item-title");
+    // name.classList.add("shop-item-title");
 
     price.textContent = item.getElementsByClassName(
       "shop-item-price"
@@ -117,7 +104,7 @@ function addToCart(id) {
 
     quantity.setAttribute("value", 1);
     quantity.classList.add("input-box");
-    quantity.onchange = function () {
+    quantity.oninput = function () {
       if (quantity.value < 0) {
         alert("No Negative Numbers allowed.");
         quantity.setAttribute("value", 1);
