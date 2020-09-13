@@ -34,6 +34,12 @@
     grid-template-rows: repeat(2, 100px);   */
 }
 
+.shop-row {
+  display: flex;
+  justify-content: space-evenly;
+  border: 5px solid black;
+}
+
 .title {
   text-align: center;
   color: white;
@@ -337,6 +343,14 @@
   align-items: center;
   /* border: 5px dashed green; */
   height: 5vh;
+}
+
+.cart-image {
+  width: 100px;
+  align-items: center;
+  position: relative;
+  /* border: 5px solid blue; */
+  /* margin: 0; */
 }
 
 .main-footer-container ul {

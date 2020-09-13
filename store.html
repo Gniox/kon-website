@@ -4,7 +4,7 @@
         <title>Ho-Kago Tea Time | About</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" async></script>
     </head>
     <body class="body" id = "abody">
         <div class="splash">
@@ -48,7 +48,7 @@
          <section class="section-container">
              <h2 class="h2-title">MUSIC</h2>
              <div class="shop-items">
-             <div class="shop-item">
+             <div class="shop-item" id="item-1">
                 <div>
                     <strong class="shop-item-title">Album 1</strong>
                 </div>
@@ -60,7 +60,7 @@
                     <button role="button">ADD TO CART</button>
                 </div>
              </div>
-             <div class="shop-item">
+             <div class="shop-item" id = "item-2">
                 <div>
                     <strong class="shop-item-title">Album 2</strong>
                 </div>
@@ -69,14 +69,14 @@
                 </div>
                 <div class="shop-item-details">
                     <span class="shop-item-price">10 headpats</span>
-                    <button role="button">ADD TO CART</button>
+                    <button role="button" onclick="addToCart('item-2')">ADD TO CART</button>
                 </div>
             </div>
          </section>
          <section class="section-container">
              <h2 class="h2-title">MERCH</h2>
              <div class="shop-items">
-             <div class="shop-item">
+             <div class="shop-item" id = "item-3">
                 <div>
                     <strong class="shop-item-title">Brows</strong>
                 </div>
@@ -88,16 +88,15 @@
                     <button role="button">ADD TO CART</button>
                 </div>
          </section class=>
-         <section class="section-container">
+         <section class="section-container" id="shop-container">
              <h2 class="h2-title">CART</h2>
-             <div>
+             <div class="shop-row">
                  <strong>ITEM</strong>
-                 &lt;&gt;
                  <strong>PRICE</strong>
-                 &lt;&gt;
                  <strong>QUANTITY</strong>
              </div>
-             <div>
+             <hr>
+             <!-- <div>
                  <img src="band pics/mugibrows.jpg" width="100">
                  <span>Mugi Brows</span> 
                  &lt;&gt;
@@ -113,15 +112,15 @@
                 <span>1000 headpats</span>
                 <input type="number" value="1">
                 <button role="button">REMOVE</button>
-            </div>
-            <div>
-                <strong>Total</strong>
-                <span>20000 headpats</span>
-            </div>
-            <div>
-                <button role="button">PURCHASE</button>
-            </div>
+            </div> -->
         </div>
+        <section class="section-container">
+        <div>
+            <strong>Total</strong>
+            <span id = "total">0 headpats</span>
+            <button role="button">PURCHASE</button>
+        </div>
+    </section>
          </section>
         </div>
         <footer class="main-footer">
