@@ -90,7 +90,7 @@ function addToCart(id) {
       "shop-item-title"
     )[0].textContent;
 
-    // name.classList.add("shop-item-title");
+    name.classList.add("cart-title");
 
     price.textContent = item.getElementsByClassName(
       "shop-item-price"
@@ -112,7 +112,7 @@ function addToCart(id) {
     };
 
     removeButton.innerHTML = "REMOVE";
-
+    removeButton.classList.add("button");
     removeButton.onclick = function () {
       quantityChange(item, quantity, uniqueId, true);
     };
