@@ -10,6 +10,10 @@ Steps for Improvement:
 * commit consistently
 * Typescript
 
+Issues:
+* About page and store page do not appear when clicked on by navbar
+* footer moves upwards before screen transition
+
 playlist link: https://www.youtube.com/watch?v=HfTXHrWMGVY&list=PLZlA0Gpn_vH9xx-RRVNG187ETT2ekWFsq
 
 
